@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Api Marvel Comics</title>
+    
+    
+    <link type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.css" media="screen" rel="stylesheet" id="linkestilo" />
+    <script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="jquery.ui.touch-punch.min.js"></script>
+    <link type="text/css" href="styles.css" media="screen" rel="stylesheet" id="linklocal" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" media="screen" rel="stylesheet" type="text/css"
+    />
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    
+    <script src="scriptjqueryui.js"></script>
+    <script type="text/javascript" src="jquery.simplePagination.js"></script>
+    <link type="text/css" rel="stylesheet" href="simplePagination.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <div id="dialog-form" title="¡Sorteo Marvel!">
+        <p class="validateTips">Has seleccionado <span id="havotado"></span>, rellena el siguiente formulario si quieres entrar en el sorteo de 2 entradas a DisneyLand</p>
+        <div>
+            <img id="imagenvotada" src="" />
+        </div>
+        <h3>Descripcion:</h3>
+        <p id="desc"></p>
+        <form>
+            <fieldset>
+                <label for="name">
+                    <h2>Nombre</h2>
+                </label>
+                <input type="text" name="name" id="name" placeholder="Tu nombre" class="text ui-widget-content ui-corner-all">
+                <label for="email">
+                    <h2>Email</h2>
+                </label>
+                <input required type="email" name="email" id="email" placeholder="pepito@gmail.com" class="text ui-widget-content ui-corner-all">
+                <label for="tlfn">
+                    <h2>Número de teléfono</h2>
+                </label>
+                <input required type="number" name="tlfn" maxlength="9"id="tlfn" placeholder="655123456" class="text ui-widget-content ui-corner-all">
+                <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+            </fieldset>
+        </form>
+    </div>
+
+    <h1><a href="index.html">COMICS</a><span>MARVEL</span><a href="index2.html">Personajes</a></h1>
+    <p>
+        <a class="voto" href="votaciones.html">VOTACIONES</a>
+    </p>
+        <div id="paginator"></div>
+    <div id="results">
+        
+        <p>Testeando la API de Marvel, para más información está el siguiente link: 
+            <a href="https://developer.marvel.com">developer.marvel.com</a>
+        </p>
+        <img id="spinner" src="tenor.gif" />
+    </div>
+    
+    <script src="script.js" ></script>
+</body>
+
+</html>

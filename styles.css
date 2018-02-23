@@ -1,0 +1,79 @@
+body{
+background: #222;
+}
+  #havotado{
+    color: red;
+  }
+h1{
+  text-align: center;
+  font-size: 60px;
+  color: red;
+}
+p{
+  padding: 1em;
+  text-align: center;
+}
+a{
+  color: red;
+  }
+  
+#results{
+  margin: 50px auto;
+  max-width: 960px;
+  background: #eee;
+  display: flex;
+  flex-flow: column wrap;
+}
+ul{
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  }
+li{
+  display: inline-block;
+  padding: 1em;
+  max-width: 200px;
+  vertical-align: top;}
+#paginator{
+  margin-left: 30vw;
+  width: 45vw;
+}
+  #paginator ul{
+    position: relative;
+    width: 100%;
+  }
+
+  span{
+    color: white;
+    font-size: 2em;
+  }
+
+  p.descripcion{
+    box-sizing: content-box;
+  }
+  p.descripcionabreviada{
+    box-sizing: content-box;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  #chart_div {
+            display: none;
+        }
+
+        #chart_div2 {
+            display: none;
+            margin-left: 10em;
+        }
+        p a.voto{
+    color: red;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 5em;
+  }
+
+  p a.votos{
+    color: red;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.3em;
+  }

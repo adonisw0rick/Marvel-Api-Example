@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI - Juego de las Profesiones</title>
+
+    <link type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.css" media="screen" rel="stylesheet" id="linkestilo" />
+    <script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="jquery.ui.touch-punch.min.js"></script>
+    <link type="text/css" href="styles.css" media="screen" rel="stylesheet" id="linklocal" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" media="screen" rel="stylesheet" type="text/css"
+    />
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="modernizr-custom.js"></script>
+    <script src="scriptjqueryui.js"></script>
+</head>
+
+<body>
+
+
+    <div id="dialog-form" title="Añadir jugador">
+        <p class="validateTips">Escribe tu nombre y selecciona el nivel de dificultad</p>
+
+        <form>
+            <fieldset>
+                <label for="name">
+                    <h2>Nombre</h2>
+                </label>
+                <input type="text" name="name" id="name" value="Anonymous" class="text ui-widget-content ui-corner-all">
+                <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                <div class="css">
+                    <h2>Selecciona el nivel de dificultad</h1>
+                        <button value="Facil" class="ui-button ui-widget ui-corner-all">
+                            Fácil
+                        </button>
+                        <button value="Medio" class="ui-button ui-widget ui-corner-all">
+                            Medio
+                        </button>
+                        <button value="Experto" class="ui-button ui-widget ui-corner-all">
+                            Experto
+                        </button>
+                </div>
+                <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="volver-form" title="Volver a jugar">
+        <form>
+            <fieldset>
+                <div class="css">
+                    <h2>Selecciona el nivel de dificultad</h1>
+                        <button value="Facil" class="ui-button ui-widget ui-corner-all">
+                            Fácil
+                        </button>
+                        <button value="Medio" class="ui-button ui-widget ui-corner-all">
+                            Medio
+                        </button>
+                        <button value="Experto" class="ui-button ui-widget ui-corner-all">
+                            Experto
+                        </button>
+                </div>
+                <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+            </fieldset>
+        </form>
+    </div>
+
+    <div id='opciones'>
+        <div id="users-contain" class="ui-widget">
+            <h1>Marcador</h1>
+            <table id="users" class="ui-widget ui-widget-content">
+                <thead>
+                    <tr class="ui-widget-header ">
+                        <th>Name</th>
+                        <th>Dificultad</th>
+                        <th>Puntuación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-----</td>
+                        <td>-----</td>
+                        <td>-----</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        </br>
+        <button id="create-user">Añadir jugador</button>
+        <h1>A Reciclar</h1>
+        <button class="ui-button ui-widget ui-corner-all" id="start">START</button>
+    </div>
+    <div id="gamearea">
+        <div id="profesiones">
+            <img src="images/elprogramador.jpg" />
+            <img src="images/elcocinero.jpg" />
+            <img src="images/lapescadora.jpg" />
+            <img src="images/elcarpintero.jpg" />
+        </div>
+        <div id="fotos">
+
+        </div>
+    </div>
+</body>
+
+</html>
